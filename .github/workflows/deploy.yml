@@ -3,7 +3,7 @@ name: Deploy React App to AWS S3
 on:
   push:
     branches:
-      - master   # 또는 main (본인 브랜치명에 맞게 수정)
+      - master   # 또는 main (리포지토리 기본 브랜치 이름 확인!)
 
 jobs:
   deploy:
@@ -32,5 +32,5 @@ jobs:
           AWS_S3_BUCKET: member-front
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: eu-north-1   # 현재 버킷 리전
+          AWS_REGION: eu-north-1
           SOURCE_DIR: build

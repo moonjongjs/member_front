@@ -6,8 +6,8 @@ export default function UserTable() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/api/user")
-      .then(res => setUsers(res.data))
+    axios.get("http://13.60.193.30:8080/api/user")
+      .then(res => setUsers(res.data) )
       .catch(err => console.error("API 오류:", err));
   }, []);
 

@@ -5,8 +5,10 @@ import "./App.scss";
 export default function UserTable() {
   const [users, setUsers] = useState([]);
 
-  useEffect(() => {               
-    axios.get("/api/user")
+  useEffect(() => {   
+    const API_BASE = process.env.REACT_APP_API_URL; // 자동으로 환경에 맞게 설정됨
+
+    axios.get(`${API_BASE}/api/user`)
       .then(res => setUsers(res.data) )
       .catch(err => console.error("API 오류:", err));
   }, []);

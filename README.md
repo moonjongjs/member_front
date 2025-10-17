@@ -5,9 +5,10 @@ git config user.name 'moonjongjs'
 git config user.email 'moonseonjong@naver.com'
 git remote add origin https://github.com/moonjongjs/gradleapp.git
 git branch -M main
+
 git add .
-git commit -m "Initial commit for EC2 CI/CD"
-git push -u origin main
+git commit -m "Update CI/CD deploy workflow"
+git push -u origin master
 
 
 git add .

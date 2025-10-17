@@ -5,7 +5,7 @@ import "./App.scss";
 export default function UserTable() {
   const [users, setUsers] = useState([]);
 
-  useEffect(() => {
+  useEffect(() => {               
     axios.get("http://43.201.8.190:8080/api/user")
       .then(res => setUsers(res.data) )
       .catch(err => console.error("API 오류:", err));

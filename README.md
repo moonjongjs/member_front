@@ -1,18 +1,21 @@
 springboot-key.pem
 
+git add .
+git commit -m "member-front Update CI/CD deploy workflow"
+git push -u origin master
+
+
 git init
 git config user.name 'moonjongjs'
 git config user.email 'moonseonjong@naver.com'
 git remote add origin https://github.com/moonjongjs/gradleapp.git
 git branch -M main
 
-git add .
-git commit -m "Update CI/CD deploy workflow"
-git push -u origin master
+
 
 
 git add .
-git commit -m "Add CI/CD deploy workflow"
+git commit -m "member-front CI/CD deploy workflow"
 git push origin main
 
 

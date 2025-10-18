@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",    
-    "deploy": "aws s3 sync build/ s3://member-front-seoul --delete"
+    "deploy": "aws s3 sync build/ s3://member-front --delete"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy":"https://moonjong.co.kr"
+  "proxy":"http://member-front.s3-website.eu-north-1.amazonaws.com"
 }

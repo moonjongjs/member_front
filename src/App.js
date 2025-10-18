@@ -10,7 +10,11 @@ export default function UserTable() {
 
     axios.get(`${API_BASE}api/user`)
     // axios.get('http://member-front.s3-website.eu-north-1.amazonaws.com')
-      .then(res => setUsers(res.data) )
+      .then((res) => {
+        setUsers(res.data);
+        console.log( res );
+        console.log( res.data );
+      })
       .catch(err => console.error("API 오류:", err));
   }, []);
 
